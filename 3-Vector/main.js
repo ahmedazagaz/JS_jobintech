@@ -1,38 +1,25 @@
-const Vecteur2D = require('./Vecteur2D');
-const Rectangle = require('./Rectangle');
-const Carre = require('./Carre');
-const Segment = require('./Segment');
+import Vecteur2D from './classes/Vecteur2D.js';
+import Point from './classes/Point.js';
+import Segment from './classes/Segment.js';
+import Rectangle from './classes/Rectangle.js';
+import Carre from './classes/Carre.js';
 
-// Vecteur2D
-
-console.log("-- Vecteur2D --");
-
-const v1 = new Vecteur2D();
-const v2 = new Vecteur2D(3, 4);
-
+// Vecteurs
+let v1 = new Vecteur2D();
+let v2 = new Vecteur2D(2, 3);
 v1.afficher();
 v2.afficher();
 
-const somme = v1.additionner(v2);
-console.log("Somme des vecteurs :");
-somme.afficher();
-
-// Rectangle & Carré
-
-console.log("\n-- Rectangle & Carré --");
-
-const r = new Rectangle(4, 6);
-const c = new Carre(5);
-
+// Rectangle et Carré
+let r = new Rectangle(4, 5);
+let c = new Carre(3);
 r.afficher();
-console.log("Surface :", r.surface());
-
 c.afficher();
-console.log("Surface :", c.surface());
 
-// Segment
-
-console.log("\n-- Segment --");
-
-const s = new Segment(0, 0, 4, 3);
+// Point et Segment
+let p1 = new Point(1, 1);
+let p2 = new Point(2, 3);
+p1.afficher();
+p2.afficher();
+let s = new Segment(0, 0, 5, 5);
 s.afficher();
