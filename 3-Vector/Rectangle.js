@@ -1,17 +1,12 @@
 class Rectangle {
-    constructor(longueur = 1, largeur = 1) {
-        this.longueur = longueur;
-        this.largeur = largeur;
-        this.nom = "rectangle";
+    constructor(l = 1, L = 1) {
+        this.l = l;
+        this.L = L;
     }
 
     afficher() {
-        console.log(`${this.nom} (longueur=${this.longueur}, largeur=${this.largeur})`);
-    }
-
-    surface() {
-        return this.longueur * this.largeur;
+        console.log(`Rectangle: l=${this.l}, L=${this.L}`);
     }
 }
 
-module.exports = Rectangle;
+export default Rectangle;
