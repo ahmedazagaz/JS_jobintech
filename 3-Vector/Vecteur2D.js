@@ -3,9 +3,11 @@ class Vecteur2D {
         this.x = x;
         this.y = y;
     }
+
     afficher() {
         console.log(`Vecteur2D(x=${this.x}, y=${this.y})`);
     }
+
     additionner(autre) {
         return new Vecteur2D(this.x + autre.x, this.y + autre.y);
     }

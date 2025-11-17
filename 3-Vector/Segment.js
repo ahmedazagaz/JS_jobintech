@@ -5,6 +5,7 @@ class Segment {
         this.orig = new Point(xOrig, yOrig);
         this.extrem = new Point(xExtrem, yExtrem);
     }
+
     afficher() {
         console.log("Segment :");
         this.orig.afficher();

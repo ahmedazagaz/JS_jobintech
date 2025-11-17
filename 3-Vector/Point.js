@@ -3,6 +3,7 @@ class Point {
         this.x = x;
         this.y = y;
     }
+
     afficher() {
         console.log(`Point(x=${this.x}, y=${this.y})`);
     }
