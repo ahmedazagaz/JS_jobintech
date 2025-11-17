@@ -1,16 +1,16 @@
-const Point = require('./Point');
+import Point from './Point.js';
 
 class Segment {
-    constructor(xOrig = 0.0, yOrig = 0.0, xExtrem = 1.0, yExtrem = 1.0) {
-        this.orig = new Point(xOrig, yOrig);
-        this.extrem = new Point(xExtrem, yExtrem);
+    constructor(x1 = 0, y1 = 0, x2 = 1, y2 = 1) {
+        this.orig = new Point(x1, y1);
+        this.extrem = new Point(x2, y2);
     }
 
     afficher() {
-        console.log("Segment :");
+        console.log("Segment:");
         this.orig.afficher();
         this.extrem.afficher();
     }
 }
 
-module.exports = Segment;
+export default Segment;
