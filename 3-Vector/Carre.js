@@ -1,10 +1,13 @@
-const Rectangle = require('./Rectangle');
+import Rectangle from './Rectangle.js';
 
 class Carre extends Rectangle {
-    constructor(cote = 1) {
-        super(cote, cote);
-        this.nom = "carré";
+    constructor(c = 1) {
+        super(c, c);
+    }
+
+    afficher() {
+        console.log(`Carré: côté=${this.l}`);
     }
 }
 
-module.exports = Carre;
+export default Carre;
