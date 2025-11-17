@@ -5,7 +5,7 @@ const Segment = require('./Segment');
 
 // Vecteur2D
 
-console.log("=== Vecteur2D ===");
+console.log("-- Vecteur2D --");
 
 const v1 = new Vecteur2D();
 const v2 = new Vecteur2D(3, 4);
@@ -19,7 +19,7 @@ somme.afficher();
 
 // Rectangle & Carré
 
-console.log("\n=== Rectangle & Carré ===");
+console.log("\n-- Rectangle & Carré --");
 
 const r = new Rectangle(4, 6);
 const c = new Carre(5);
@@ -32,7 +32,7 @@ console.log("Surface :", c.surface());
 
 // Segment
 
-console.log("\n=== Segment ===");
+console.log("\n-- Segment --");
 
 const s = new Segment(0, 0, 4, 3);
 s.afficher();

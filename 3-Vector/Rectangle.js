@@ -1,3 +1,4 @@
+//class Rectangle
 class Rectangle {
     constructor(longueur = 1, largeur = 1) {
         this.longueur = longueur;
