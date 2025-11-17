@@ -5,12 +5,8 @@ class Vecteur2D {
     }
 
     afficher() {
-        console.log(`Vecteur2D(x=${this.x}, y=${this.y})`);
-    }
-
-    additionner(autre) {
-        return new Vecteur2D(this.x + autre.x, this.y + autre.y);
+        console.log(`Vecteur2D: x=${this.x}, y=${this.y}`);
     }
 }
 
-module.exports = Vecteur2D;
+export default Vecteur2D;
