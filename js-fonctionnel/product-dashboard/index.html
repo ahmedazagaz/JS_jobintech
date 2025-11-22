@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Product Dashboard</h1>
+
+  <div>
+    <label for="categoryFilter">Filtrer par catégorie:</label>
+    <select id="categoryFilter">
+      <option value="all">Toutes</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="sortSelect">Trier par:</label>
+    <select id="sortSelect">
+      <option value="price">Prix</option>
+      <option value="stock">Stock</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="searchInput">Rechercher:</label>
+    <input type="text" id="searchInput" placeholder="Nom du produit">
+  </div>
+
+  <h2>Produits</h2>
+  <table border="1" id="productTable">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Prix</th>
+        <th>Catégorie</th>
+        <th>Stock</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h2>Prix total des produits: <span id="totalPrice">0</span>DH</h2>
+
+  <h2>Graphiques (Stock par catégorie)</h2>
+  <canvas id="stockChart" width="400" height="200"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>

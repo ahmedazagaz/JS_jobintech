@@ -1,0 +1,7 @@
+[
+  { "name": "Ordinateur portable", "price": 999, "category": "Électronique", "stock": 10 },
+  { "name": "Souris", "price": 25, "category": "Électronique", "stock": 50 },
+  { "name": "Chaise", "price": 100, "category": "Mobilier", "stock": 5 },
+  { "name": "T-shirt", "price": 20, "category": "Vêtements", "stock": 100 },
+  { "name": "Casque audio", "price": 75, "category": "Électronique", "stock": 8 }
+]
