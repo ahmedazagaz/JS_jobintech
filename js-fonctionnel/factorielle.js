@@ -6,4 +6,4 @@ const fact = n =>
 const transform = list => 
   list.map(fact);
 
-console.log(transform(numbers)); 
+console.log(transform(numbers)); // [1, 6, 24]
